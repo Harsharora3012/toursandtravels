@@ -1,0 +1,94 @@
+body,html{
+    margin: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.main{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/img_bg_2.jpg);
+    background-size: cover;
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
+}
+.form
+{
+    height: 450px;
+    width: 350px;
+    position: relative;
+    background: #fff;
+    margin: 6% auto;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box
+  {
+    width: 184px;
+    margin: 30px auto;
+    background: transparent;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 15px 5px #ff61241f;
+  }
+  #bottom{
+      margin-top: 150px;
+  }
+  .button{
+      padding: 7px 23px;
+      border: none;
+      background: transparent;
+      border-radius: 20px;
+      position: relative;
+  }
+  #btn{
+      top: 0;
+      left: 0;
+      position: absolute;
+      width: 92px;
+      border-radius: 20px;
+      background: #fd0;
+      height: 100%;
+      transition: 0.5s;
+  }
+  .input{
+      top: 150px;
+      position: absolute;
+      width: 250px;
+      transition: .5s;
+  }
+  .field{
+      width: 100%;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid;
+      padding: 9px 0;
+      margin: 5px;
+      outline: none;
+      background: transparent;
+  }
+  #login{
+      left: 50px;
+  }
+  #register{
+      left:450px;
+  }
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: #ffdd00;
+  }
